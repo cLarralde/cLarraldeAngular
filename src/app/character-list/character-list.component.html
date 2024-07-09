@@ -1,0 +1,47 @@
+<h1>Lista de personajes Cyberpunk 2077</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Retrato:</th>
+      <th>Nombre:</th>
+      <th>Edad:</th>
+      <th>Faccion:</th>
+      <th>Estatus:</th>
+      <th>Rol:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> <img [src]="personaje.retrato" [alt]="personaje.nombre"></td>
+      <td>{{ personaje.nombre }}</td>
+      <td>{{ personaje.edad }}</td>
+      <td>{{ personaje.faccion }}</td>
+      <td>{{ personaje.estatus }}</td>
+      <td>{{ personaje.rol }}</td>
+    </tr>
+    <tr>
+      <td><img [src]="personajeDos.retrato" [alt]="personajeDos.nombre"></td>
+      <td>{{ personajeDos.nombre }}</td>
+      <td>{{ personajeDos.edad }}</td>
+      <td>{{ personajeDos.faccion }}</td>
+      <td>{{ personajeDos.estatus }}</td>
+      <td>{{ personajeDos.rol }}</td>
+    </tr>
+    <tr>
+      <td><img [src]="personajeTres.retrato" [alt]="personajeTres.nombre"></td>
+      <td>{{ personajeTres.nombre }}</td>
+      <td>{{ personajeTres.edad }}</td>
+      <td>{{ personajeTres.faccion }}</td>
+      <td>{{ personajeTres.estatus }}</td>
+      <td>{{ personajeTres.rol }} <span>DLC</span></td>
+    </tr>
+    <tr>
+      <td><img [src]="personajeCuatro.retrato" [alt]="personajeCuatro.nombre"></td>
+      <td>{{ personajeCuatro.nombre }}</td>
+      <td>{{ personajeCuatro.edad }}</td>
+      <td>{{ personajeCuatro.faccion }}</td>
+      <td>{{ personajeCuatro.estatus }}</td>
+      <td>{{ personajeCuatro.rol }}</td>
+    </tr>
+  </tbody>
+</table>
