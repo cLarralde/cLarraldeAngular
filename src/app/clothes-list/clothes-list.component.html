@@ -1,0 +1,25 @@
+<h1>Lista de stock</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Imagen:</th>
+      <th>Producto:</th>
+      <th>Temporada:</th>
+      <th>Precio:</th>
+      <th>Stock:</th>
+      <th>Cantidad de compra:</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (producto of
+    productos; track producto.nombre){
+    <tr>
+      <td><img [src]="producto.imagen" [alt]="producto.nombre" /></td>
+      <td>{{ producto.nombre | uppercase }}</td>
+      <td>{{ producto.temporada }}</td>
+      <td>{{ producto.precio }}</td>
+      <td>{{ producto.stock }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
