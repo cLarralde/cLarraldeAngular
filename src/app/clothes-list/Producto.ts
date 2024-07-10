@@ -4,4 +4,5 @@ export interface Producto{
     temporada:number;
     precio:number;
     stock:number;
+    oferta:boolean;
 }

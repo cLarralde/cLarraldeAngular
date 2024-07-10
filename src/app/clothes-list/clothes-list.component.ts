@@ -14,6 +14,7 @@ export class ClothesListComponent implements OnInit {
       temporada: 2022,
       precio: 25000,
       stock: 28,
+      oferta:false,
     },
     {
       imagen: 'img/cargoFuturo.jpg',
@@ -21,6 +22,7 @@ export class ClothesListComponent implements OnInit {
       temporada: 2024,
       precio: 48000,
       stock: 5,
+      oferta:true,
     },
     {
       imagen: 'img/buzoBudo.jpg',
@@ -28,6 +30,7 @@ export class ClothesListComponent implements OnInit {
       temporada: 2021,
       precio: 17000,
       stock: 17,
+      oferta:true,
     },
 
     {
@@ -36,6 +39,7 @@ export class ClothesListComponent implements OnInit {
       temporada: 2024,
       precio: 78000,
       stock: 80,
+      oferta:false,
     },
   ];
 
