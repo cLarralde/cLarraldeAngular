@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClothesListComponent } from './clothes-list/clothes-list.component';
 import { FormsModule } from '@angular/forms';
+import { CyberpunkTiendaComponent } from './cyberpunk-tienda/cyberpunk-tienda.component';
+import { CyberpunkAboutComponent } from './cyberpunk-about/cyberpunk-about.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClothesListComponent
+    ClothesListComponent,
+    CyberpunkTiendaComponent,
+    CyberpunkAboutComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
