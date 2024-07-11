@@ -24,6 +24,11 @@
       } @else {
       <td><span class="badge badge-warning"> Sin stock </span></td>
       }
+      <td>
+        <button class="btn btn-primary btn-sm" (click)="discantidad(producto)">-</button>
+        <input type="text" [(ngModel)]="producto.cantidad" style="width:80px">
+        <button class="btn btn-primary btn-sm" (click)="addcantidad(producto)">+</button>
+      </td>
     </tr>
     } @empty {
     <tr>

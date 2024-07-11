@@ -14,7 +14,8 @@ export class ClothesListComponent implements OnInit {
       temporada: 2022,
       precio: 25000,
       stock: 28,
-      oferta:false,
+      oferta: false,
+      cantidad: 0,
     },
     {
       imagen: 'img/cargoFuturo.jpg',
@@ -22,7 +23,8 @@ export class ClothesListComponent implements OnInit {
       temporada: 2024,
       precio: 48000,
       stock: 5,
-      oferta:true,
+      oferta: true,
+      cantidad: 0,
     },
     {
       imagen: 'img/buzoBudo.jpg',
@@ -30,7 +32,8 @@ export class ClothesListComponent implements OnInit {
       temporada: 2021,
       precio: 17000,
       stock: 17,
-      oferta:true,
+      oferta: true,
+      cantidad: 0,
     },
 
     {
@@ -39,10 +42,21 @@ export class ClothesListComponent implements OnInit {
       temporada: 2024,
       precio: 78000,
       stock: 80,
-      oferta:false,
+      oferta: false,
+      cantidad: 0,
     },
   ];
 
   constructor() {}
   ngOnInit(): void {}
+  addcantidad(producto: Producto): void {
+    if (producto.stock > producto.cantidad) {
+      producto.cantidad++;
+    }
+  }
+  discantidad(producto: Producto): void {
+    if (producto.cantidad > 0) {
+      producto.cantidad--;
+    }
+  }
 }
