@@ -49,14 +49,4 @@ export class ClothesListComponent implements OnInit {
 
   constructor() {}
   ngOnInit(): void {}
-  addcantidad(producto: Producto): void {
-    if (producto.stock > producto.cantidad) {
-      producto.cantidad++;
-    }
-  }
-  discantidad(producto: Producto): void {
-    if (producto.cantidad > 0) {
-      producto.cantidad--;
-    }
-  }
 }

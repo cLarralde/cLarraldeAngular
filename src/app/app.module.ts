@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { CyberpunkTiendaComponent } from './cyberpunk-tienda/cyberpunk-tienda.component';
 import { CyberpunkAboutComponent } from './cyberpunk-about/cyberpunk-about.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { InputNumberRefactoredComponent } from './input-number-refactored/input-number-refactored.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CarritoComponent } from './carrito/carrito.component';
     ClothesListComponent,
     CyberpunkTiendaComponent,
     CyberpunkAboutComponent,
-    CarritoComponent
+    CarritoComponent,
+    InputNumberRefactoredComponent
   ],
   imports: [
     BrowserModule,

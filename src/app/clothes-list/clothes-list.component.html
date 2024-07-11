@@ -25,17 +25,7 @@
       <td><span class="badge badge-warning"> Sin stock </span></td>
       }
       <td>
-        <button class="btn btn-primary btn-sm" (click)="discantidad(producto)">
-          -
-        </button>
-        <input
-          type="text"
-          [(ngModel)]="producto.cantidad"
-          style="width: 80px"
-        />
-        <button class="btn btn-primary btn-sm" (click)="addcantidad(producto)">
-          +
-        </button>
+        <app-input-number-refactored [producto]="producto"></app-input-number-refactored>
       </td>
     </tr>
     } @empty {
