@@ -30,6 +30,11 @@
           [max]="producto.stock"
         ></app-input-number-refactored>
       </td>
+      <td>
+        <button class="btn btn-primary" (click)="addCart(producto)">
+          Añadír
+        </button>
+      </td>
     </tr>
     } @empty {
     <tr>
