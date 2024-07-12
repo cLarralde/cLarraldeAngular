@@ -25,7 +25,10 @@
       <td><span class="badge badge-warning"> Sin stock </span></td>
       }
       <td>
-        <app-input-number-refactored [producto]="producto"></app-input-number-refactored>
+        <app-input-number-refactored
+          [(quantity)]="producto.cantidad"
+          [max]="producto.stock"
+        ></app-input-number-refactored>
       </td>
     </tr>
     } @empty {

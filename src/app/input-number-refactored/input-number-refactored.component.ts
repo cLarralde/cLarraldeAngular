@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Producto } from '../clothes-list/Producto';
+import { max } from 'rxjs';
 
 @Component({
   selector: 'app-input-number-refactored',
@@ -8,17 +9,26 @@ import { Producto } from '../clothes-list/Producto';
 })
 export class InputNumberRefactoredComponent implements OnInit {
   constructor() {}
-  @Input()
-  producto: Producto;
+  @Input() quantity: number;
   ngOnInit(): void {}
-  addcantidad(producto: Producto): void {
-    if (producto.stock > producto.cantidad) {
-      producto.cantidad++;
+  @Input() max: number;
+
+  @Output() quantityChange: EventEmitter<number> = new EventEmitter<number>();
+
+  addcantidad(): void {
+    if (this.quantity < this.max) {
+      this.quantity++;
+      this.quantityChange.emit(this.quantity);
     }
   }
-  discantidad(producto: Producto): void {
-    if (producto.cantidad > 0) {
-      producto.cantidad--;
+  discantidad(): void {
+    if (this.quantity > 0) {
+      this.quantity--;
+      this.quantityChange.emit(this.quantity);
     }
   }
+  /*cambiarcantidad(event):void{
+    console.log(event.key);
+    this.quantityChange.emit(this.quantity);
+  } */
 }
