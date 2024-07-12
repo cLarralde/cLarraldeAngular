@@ -1,8 +1,8 @@
 <h3>Carrito de compras</h3>
-<ul>
-    @for (producto of listaCarrito$|async; track producto.nombre) {
-        <li>
-            {{producto.nombre}}: {{producto.cantidad}}
-        </li>
-    }
+<ul class="list-group">
+  @for (producto of listaCarrito$|async; track producto.nombre) {
+  <li class="list-group-item">
+    {{ producto.nombre }}: {{ producto.cantidad }}
+  </li>
+  }
 </ul>

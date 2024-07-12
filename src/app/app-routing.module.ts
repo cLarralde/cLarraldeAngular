@@ -5,22 +5,22 @@ import { CyberpunkAboutComponent } from './cyberpunk-about/cyberpunk-about.compo
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo:'cyberpunk',
-    pathMatch:'full'
-    },
-  {
-    path:'cyberpunk',
-    component: CyberpunkTiendaComponent
+    path: '',
+    redirectTo: 'cyberpunk',
+    pathMatch: 'full',
   },
   {
-    path:'about',
-    component:CyberpunkAboutComponent
-  }
+    path: 'cyberpunk',
+    component: CyberpunkTiendaComponent,
+  },
+  {
+    path: 'about',
+    component: CyberpunkAboutComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

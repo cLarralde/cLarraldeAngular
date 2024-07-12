@@ -9,6 +9,7 @@ import { CyberpunkTiendaComponent } from './cyberpunk-tienda/cyberpunk-tienda.co
 import { CyberpunkAboutComponent } from './cyberpunk-about/cyberpunk-about.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { InputNumberRefactoredComponent } from './input-number-refactored/input-number-refactored.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,10 @@ import { InputNumberRefactoredComponent } from './input-number-refactored/input-
     CyberpunkTiendaComponent,
     CyberpunkAboutComponent,
     CarritoComponent,
-    InputNumberRefactoredComponent
+    InputNumberRefactoredComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -27,8 +27,4 @@ export class InputNumberRefactoredComponent implements OnInit {
       this.quantityChange.emit(this.quantity);
     }
   }
-  /*cambiarcantidad(event):void{
-    console.log(event.key);
-    this.quantityChange.emit(this.quantity);
-  } */
 }

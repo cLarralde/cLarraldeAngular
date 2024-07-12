@@ -6,14 +6,12 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-carrito',
   templateUrl: './carrito.component.html',
-  styleUrl: './carrito.component.scss'
+  styleUrl: './carrito.component.scss',
 })
 export class CarritoComponent implements OnInit {
-listaCarrito$: Observable<Producto[]>;
-  constructor( private cart: ClothesCartService){
+  listaCarrito$: Observable<Producto[]>;
+  constructor(private cart: ClothesCartService) {
     this.listaCarrito$ = cart.carrito.asObservable();
-}
-  ngOnInit(): void {
   }
-
+  ngOnInit(): void {}
 }

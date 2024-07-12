@@ -1,9 +1,9 @@
-export interface Producto{
-    imagen:string;
-    nombre:string;
-    temporada:number;
-    precio:number;
-    stock:number;
-    oferta:boolean;
-    cantidad:number;
+export interface Producto {
+  imagen: string;
+  nombre: string;
+  temporada: number;
+  precio: number;
+  stock: number;
+  oferta: boolean;
+  cantidad: number;
 }
